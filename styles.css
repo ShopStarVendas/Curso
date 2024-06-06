@@ -1,0 +1,214 @@
+/* Reset de margem e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo e fundo */
+body {
+    background-color: #000; /* Fundo preto */
+    color: red; /* Texto branco */
+    font-family: Arial, sans-serif;
+}
+
+/* Estilos para o cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1c1c1c;
+}
+
+header .logo {
+    width: 150px;
+    height: 50px;
+    background: url('img/logo.jpg') no-repeat center center;
+    background-size: contain;
+}
+
+/* Estilos para a navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li button {
+    background-color: #ff69b4; /* Rosa choque */
+    border: none;
+    color: #00ffd5e2;
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-shadow: 0 0 10px rgba(255, 105, 180, 0.7);
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.7);
+    animation: colorChange 5s infinite;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+nav ul li button:hover {
+    background-color: #e60073; /* Tom mais escuro de rosa choque */
+    box-shadow: 0 0 30px rgba(230, 0, 115, 0.9);
+}
+
+/* Animação de mudança de cores */
+@keyframes colorChange {
+    0% {
+        background-color: #00ffff9e; /* Rosa choque */
+    }
+    33% {
+        background-color: #ff2bb29e; /* Verde neon */
+    }
+    66% {
+        background-color: #3bff009e; /* Azul marinho */
+    }
+    100% {
+        background-color: #00ffea7d; /* Rosa choque */
+    }
+}
+
+/* Estilos para a seção principal */
+main {
+    padding: 20px;
+}
+
+/* Estilos para a seção hero */
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background: url('img/logo.jpg') no-repeat center center;
+    background-size: cover;
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #39ff14; /* Verde neon */
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(57, 255, 20, 0.7);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.hero button:hover {
+    background-color: #26ff00a9; /* Tom mais escuro de verde neon */
+    box-shadow: 0 0 30px rgba(50, 205, 50, 0.9);
+}
+
+/* Estilos para as características */
+.features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 50px 0;
+}
+
+.feature {
+    flex: 1 1 45%;
+    margin: 20px;
+    padding: 20px;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+.feature .icon {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+/* Estilos para o depoimento */
+.testimonial {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.testimonial blockquote {
+    font-size: 18px;
+    font-style: italic;
+}
+
+.testimonial cite {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Estilos para o rodapé */
+footer {
+    padding: 20px;
+    background-color: #1c1c1c;
+    text-align: center;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    color: #fff;
+    margin: 0 5px;
+}
+
+/* Estilo para a seção com imagem de fundo */
+.background-section {
+    background-image: url('img/logo1.jpg');
+    background-size: cover; /* Ajusta o tamanho da imagem de fundo para cobrir toda a área */
+    background-position: center; /* Centraliza a imagem de fundo */
+    background-repeat: no-repeat; /* Impede a repetição da imagem de fundo */
+    opacity: 0.5; /* Define a opacidade da imagem (0.5 = 50% de transparência) */
+}
+
+/* Estilo para o texto na seção */
+.background-section p {
+    color: #fff; /* Cor do texto */
+    font-size: 18px; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    padding: 20px; /* Espaçamento interno */
+}
+        .social-icons {
+            display: flex;
+        }
+        .social-icons a {
+            margin-right: 10px; /* Espaçamento entre os ícones */
+        }
+        .social-icons a img {
+            width: 40px; /* Largura do ícone */
+            height: auto; /* Altura ajustada automaticamente */
+        }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Curso de Segurança da Informação - Termos de Uso</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-image: url('img/21.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        .checkbox-container {
+            margin-top: 20px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Seu cabeçalho -->
+    </header>
+    <main>
+        <section class="terms-of-use">
+            <h2>Termos de Uso</h2>
+            <p>Bem-vindo aos Termos de Uso do nosso serviço de proteção de dados. Ao acessar ou utilizar nossos serviços, você concorda em cumprir estes termos. Por favor, leia-os atentamente antes de prosseguir.</p>
+            <!-- Seus termos de uso -->
+        </section>
+        <section class="accept-terms">
+            <div class="checkbox-container">
+                <input type="checkbox" id="accept-terms-checkbox">
+                <label for="accept-terms-checkbox">Eu li e concordo com os <a href="12.html">Termos de Uso</a> e a <a href="privacidade.html">Política de Privacidade</a>.</label>
+            </div>
+            <button onclick="acceptTerms()">Aceitar e Prosseguir</button>
+        </section>
+    </main>
+    <footer>
+            <h4>Clique em política de privacidade</h4>
+            <p>para mais informações </p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        function acceptTerms() {
+            if (document.getElementById("accept-terms-checkbox").checked) {
+                window.location.href = "index.html"; // Redireciona para a página principal após aceitar os termos
+            } else {
+                alert("Você precisa concordar com os termos antes de prosseguir.");
+            }
+        }
+    </script>
+</body>
+</html>
